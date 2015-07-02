@@ -1,0 +1,132 @@
+*{
+	margin:0;
+	padding:0;
+	list-style:none;
+	-webkit-box-sizing:border-box;
+}
+
+html{
+	font-size:62.5%;
+}
+
+body{
+	font-family:"微软雅黑";
+	font-weight:bold;
+}
+
+.container{
+	width:100%;
+	height:100%;
+}
+
+header{
+	height:4rem;
+	line-height:4rem;
+	background:#3399FE;
+	color:#fff;
+	font-size:1.5rem;
+	font-weight:bold;
+	text-align:center;
+	letter-spacing:.2rem;
+}
+
+header em{
+	font-style:normal;
+}
+
+header span{
+	position:absolute;
+	top:1.5rem;
+	border:7px solid transparent;
+	width:0;
+	height:0;
+	overflow:hidden;
+}
+
+header span#prev{
+	border-right-color:#fff;
+	left:1rem;
+}
+
+header span#next{
+	border-left-color:#fff;
+	right:1rem;
+}
+
+.week{
+	display:-webkit-box;
+	width:100%;
+	height:2.4rem;
+	background:#f3f3f3;
+	border-bottom:1px solid #ccc;
+}
+
+.week li{
+	-webkit-box-flex:1;
+	text-align:center;
+	line-height:2.4rem;
+	color:#333;
+}
+
+.now{
+	width:100%;
+	height:3rem;
+	padding-left:1rem;
+	line-height:3rem;
+	color:#3399fe;
+	border-bottom:1px solid #ccc;
+}
+
+.datebox{
+	width:320px;
+	overflow:hidden; 
+}
+
+.date{
+	width:640px;
+}
+
+.date ul{
+	width:320px;
+	height:300px;
+	float:left;
+}
+
+.date ul li{
+	float:left;
+	background:#F3F3F3;
+	color:#000;
+	text-align:center;
+}
+
+.date ul li.past{
+	background:#eee;
+	color:#fff;
+}
+
+.date ul li.current{
+	background:#f00;
+	color:#fff;
+}
+
+
+@media screen and (min-width:320px){
+   .date ul li{
+   	  width:38px;
+   	  height:30px;
+   	  line-height:30px;
+   	  margin:7px 0 0 6px;
+   }
+}
+
+@media screen and (min-width:375px) and (max-width:414px){
+   .date ul li{
+   	  width:47px;
+   	  height:35px;
+   	  line-height:35px;
+   	  margin:7px 0 0 6px;
+   }
+}
+
+
+
